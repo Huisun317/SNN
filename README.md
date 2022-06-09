@@ -15,5 +15,8 @@ An eight-dimensioanl example is constructed for numerical demonstration.
 When the strong convexity assumption is relaxed, one can only show convergence of the algorithm (with the martingale trick), but not convergence in the global minimum sense. 
 
 
-\section{High dimension}
-
+## High dimension
+This idea can be generated to higher dimensions to train stochastic neural networks. Notice that under our stochastic framework, the diffusion process 
+\begin{equation}
+dX_t = b(u_t, X_t) dt + \sigma (u_t,X_t) dW_t 
+\end{equation}
