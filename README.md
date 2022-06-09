@@ -21,4 +21,5 @@ $$dX_t = b(u_t, X_t) dt + \sigma (u_t,X_t) dW_t $$
 can be treated with ResNet adding a noise at each forward process. Then, it is natural to train the SNN in the SMP setting since taking derivatives with respect to controls related to diffusion will require Ito's formula.
 
 The addition of the noise term in building neural networks brings a few benefits and a few observations are in order. 
-1. Removing the noise (or setting the noise to be constant) term will result in the standard Maxium Principle framework for solving $Y_n$(Qianxiao Li etal, https://arxiv.org/abs/1710.09513)
+1. Removing the noise term (or setting the noise to be constant) will result in the standard Maxium Principle framework for solving $Y_n$(Qianxiao Li etal, https://arxiv.org/abs/1710.09513) We give here an example of training such NN on CIFAR10 and obtain 93%~94% accuracy on the test set without much fine tuning. 
+2. Adding a noise term can increase the robustness of the neural network compared to the standard feedforward neural network trained to the same level of accuracy (on test set.) This observation echos the findings of the paper (Bao Wang etal. https://arxiv.org/abs/1811.10745)
