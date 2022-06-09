@@ -24,3 +24,16 @@ The addition of the noise term in building stochastic neural networks brings a f
 1. Removing the noise term (or setting the noise to be constant) will result in the standard Maxium Principle framework for solving $Y_n$(Qianxiao Li etal, https://arxiv.org/abs/1710.09513) We give here an example of training such NN on CIFAR10 and obtain 93%~94% accuracy on the test set without much fine tuning. 
 2. Adding a noise term can increase the robustness of the neural network compared to the standard feedforward neural network trained to achieve the same level of accuracy (on test set.) This observation echos the findings of the paper (Bao Wang etal. https://arxiv.org/abs/1811.10745). Instead running a large volume of ResNet code to prove this fact like the reference just mentioned, we train both the standard FFNN and SNN to the same level of accuracy on both the MNIST and FASHION MNIST dataset and perform adversial attack on the trained neural networks. We show that SNN is more robust when facing such attack. 
 3. Since our work is under the framework of stochastic control which is intimately related to the HJB equation, we show that it is natural to solve the HJB equation through our approahch. We use the standard HJB example in the classical paper (Jiequn Han, Arnulf Jentzen Weinan E https://arxiv.org/pdf/1707.02568.pdf)
+4. The HJB example has a constant diffusion term. To show that the diffusion term can be approximated by a nural network whose parameters can be optimized through our procedure, we solve a high dimensional linear quadratic problem. (Example and exact solution borrowed from https://arxiv.org/abs/2007.02227)
+5. Fixing a input $X_0$ and passing it through a stochastoc neural net will produce a random variable. Thus, learning from noise data through controling the diffusion term will help us in quantifying the uncertainity of the dataset. This is a very interesting idea/direction that the author is exploring.   
+
+
+
+
+
+
+
+
+
+
+
