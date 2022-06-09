@@ -17,6 +17,6 @@ When the strong convexity assumption is relaxed, one can only show convergence o
 
 ## High dimension
 This idea can be generated to higher dimensions to train stochastic neural networks. Notice that under our stochastic framework, the diffusion process 
-\begin{equation}
+$$
 dX_t = b(u_t, X_t) dt + \sigma (u_t,X_t) dW_t 
-\end{equation}
+$$
