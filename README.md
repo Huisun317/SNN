@@ -1,5 +1,5 @@
 # SNN
-This repository contains code/implementation results of our novel Stochastic Maximum principle approach for solving control problems using the SGD optimization procedure.
+This repository contains the code/implementation results of our novel Stochastic Maximum principle approach for solving control problems using the SGD optimization procedure.
 
 The goal of this paper/project (under review in SIAM Journal of Numerical Analysis) is to solve the stochastic optimal control problem through the stochastic maximal principle (SMP) where the control is assumed to be time deterministic. 
 
