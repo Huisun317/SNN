@@ -1,1 +1,1 @@
-Please see terminal.ipyn file for a detailed problem setup. 
+Please see terminal.ipynb file for a detailed problem setup. 
