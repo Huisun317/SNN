@@ -29,7 +29,7 @@ The addition of the noise term in building stochastic neural networks brings a f
 
 
 
-The author/maintainer of this repository is solely responsible for the ideas/proofs/code of the project. All mistakes are mine. Send any issues/mistakes spotted to Email:huisun90317@gmail.com. 
+
 
 
 
