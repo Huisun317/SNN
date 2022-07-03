@@ -1,3 +1,5 @@
+## High dimensional linear quadratic example
+
 This second example is a classical linear quadratic problem. 
 
 
