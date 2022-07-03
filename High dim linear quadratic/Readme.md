@@ -29,4 +29,4 @@ $$
 
 The setup:
 
-$T=0.1,x_0=1$ $Q=I_n$, the benchmark value of $p_0$ is $p^*_0 = -0.9586$. Our new algorithm produces result that is fairly close to the benchmark. 
+$T=0.1,x_0=1$ $Q=I_n$, the dimension is $n=100$. The benchmark value of $p_0$ is $p^*_0 = -0.9586$. Our new algorithm produces result that is fairly close to the benchmark. 
