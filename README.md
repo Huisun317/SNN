@@ -15,7 +15,7 @@ An eight-dimensioanl example is constructed for numerical demonstration.
 When the strong convexity assumption is relaxed, one can only show convergence of the algorithm (with the martingale trick), but not convergence in the global minimum sense. 
 
 
-## High dimension
+## High dimension and application in Deep Learning 
 This idea can be generated to higher dimensions to train stochastic neural networks. Notice that under our stochastic framework, the diffusion process 
 $$dX_t = b(u_t, X_t) dt + \sigma (u_t,X_t) dW_t $$
 can be treated with ResNet adding a noise at each forward process. Then, it is natural to train the SNN in the SMP setting since taking derivatives with respect to controls related to diffusion will require Ito's formula.
