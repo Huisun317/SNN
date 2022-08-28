@@ -9,7 +9,7 @@ When the problem is convex, we show that the decay rate (under sqaured norm) is:
 
 $$\sim (C_1 \frac{1}{N} + C_2 \frac{N}{K})$$
 
-where N is the total time discretization and $K$ is the iteration number. 
+where N is the total time discretization and $ K $ is the iteration number. 
 
 An eight-dimensioanl example is constructed for numerical demonstration. 
 ![high_dim_decay](https://user-images.githubusercontent.com/107137651/172748641-ae492a7f-a47d-4e6c-a046-8b6ec7af7439.png)
