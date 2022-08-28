@@ -9,4 +9,4 @@ $$
 
 where $\sigma$ is a Sigmoid function, the algorithm converges. 
 
-However, when ReLu is used in place, the control parameters blow up since this function is non-smooth and unbounded. 
+However, when ReLu is used in place, the control parameters blow up (NAN or are demonstrated to be very large) since this function is non-smooth and unbounded. 
