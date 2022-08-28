@@ -9,6 +9,6 @@ $$
 \end{equation}
 $$
 
-we approximate $(Y_t, Z_t)$ with  a Sigmoid function, the algorithm converges. 
+where $\sigma$ a Sigmoid function, the algorithm converges. 
 
-However, when ReLu is used in place, the control parameters blow up (NAN or are demonstrated to be very large) since this function is non-smooth and unbounded. 
+However, when ReLu is used in place, the control parameters blow up (NAN or are demonstrated to be very large) since this function is non-smooth and unbounded.
