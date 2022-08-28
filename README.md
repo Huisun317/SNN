@@ -6,7 +6,9 @@ The goal of this paper/project (under review in SIAM Journal of Numerical Analys
 As usual, SMP relies on constructing the "adjoint process" $(Y_t, Z_t)$ to find the optimal control which will in turn requires finding the numerical solution of these two processes. Solving these two 'functions' (Feyman-Kac) is not very efficient especially in high dimensions. Noticing that the true goal is to find the optimal control $u_t$ (or $u_{n}$ in the discretized case), we approximate $(Y_t, Z_t)$ with the one-trajectory approximation, and rely on the SGD algorithm to reach convergence in expectation.
 
 When the problem is convex, we show that the decay rate (under sqaured norm) is:
+
 $$\sim (C_1 \frac{1}{N} + C_2 \frac{N}{K})$$
+
 where N is the total time discretization and $K$ is the iteration number. 
 
 An eight-dimensioanl example is constructed for numerical demonstration. 
@@ -16,8 +18,10 @@ When the strong convexity assumption is relaxed, one can only show convergence o
 
 
 ## High dimension and application in Deep Learning 
-This idea can be generated to higher dimensions to train stochastic neural networks. Notice that under our stochastic framework, the diffusion process 
+This idea can be generated to higher dimensions to train stochastic neural networks. Notice that under our stochastic framework, the diffusion process
+
 $$dX_t = b(u_t, X_t) dt + \sigma (u_t,X_t) dW_t $$
+
 can be treated with ResNet adding a noise at each forward process. Then, it is natural to train the SNN in the SMP setting since taking derivatives with respect to controls related to diffusion will require Ito's formula.
 
 The addition of the noise term in building stochastic neural networks brings a few benefits, and a few observations are in order. 
